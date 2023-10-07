@@ -1,0 +1,299 @@
+
+
+  /* Define the slider styles */
+  .theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.theme-switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.theme-switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.theme-switch input:checked + .slider {
+    background-color: #2196F3;
+}
+
+.theme-switch input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+.theme-switch input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.theme-switch .slider.round {
+    border-radius: 34px;
+}
+
+.theme-switch .slider.round:before {
+    border-radius: 50%;
+}
+
+
+
+  .Heading h1{
+    text-align: center;
+  }
+  .main-container {
+    height: 44rem;
+    width: 89rem;
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-between; /* Spread items horizontally */
+}
+
+.area-1, .area-2, .area-3 {
+    background-color: rgb(107, 184, 222);
+    width: 27rem;
+    height: 43rem;
+    border-radius: 20px;
+    border: 2px solid purple;
+    margin-right: 2rem; /* Add margin to separate areas */
+    margin-left: 2rem;
+    overflow: auto; 
+}
+ .area-11{
+    margin-top: 1rem;
+    margin-left: 1rem;
+ }
+
+
+/* Your other CSS styles */
+/* ... */
+
+/*
+.main-container{
+ 
+    height:44rem;
+    width: 89rem;
+
+
+}
+.area-1{
+    background-color:  rgb(107, 184, 222);
+   
+ width: 27rem;
+ height: 43rem;
+ display: inline-block;
+ margin-left: 2rem;
+ border-radius: 20px;
+ border-color: purple;
+border-style: solid;
+
+}
+.area-2{
+    background-color:  rgb(107, 184, 222);
+ width: 27rem;
+ height: 43rem;
+ display: inline-block;
+ margin-left: 2rem;
+ border-radius: 20px;
+ border-color: purple;
+border-style: solid;
+
+}
+.area-3{
+    background-color: rgb(107, 184, 222);
+ width: 27rem;
+ height: 43rem;
+ display: inline-block;
+ margin-left: 2rem;
+ border-radius: 20px;
+ border-color: purple;
+ border-style: solid;
+}
+
+*/
+
+
+#genre-select {
+   
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #460e0e15;
+}
+
+
+#genre-select option {
+    background-color: #2a222210;
+}
+
+
+
+
+#all-songs button{
+       background-color:lightblue;
+    font-size: 15px;
+    display: block;
+    margin-top: 1rem;
+    border: none;
+    color: white;
+
+}
+#all-songs button:hover{
+    background-color:  rgb(107, 184, 222);;
+}
+
+.card-img{
+   height: 20rem;
+
+
+   
+}
+.card1{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ 
+}
+#song-picture{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ 
+    border-color: purple;
+    border-style: solid;
+    background-color: rgb(63, 63, 88);
+    border-radius: 20px;
+}
+.card11{
+    margin-left: 15px;   
+}
+#song-control{
+    margin-left: 90px;
+    margin-right: 10px;
+    margin-top: 19px;
+    margin-bottom: 10px;
+
+}
+
+
+
+
+.add-playlist{
+    margin-left: 9.8rem;
+    margin-top: 2rem;
+}
+.prev-song{
+    margin-top: 2rem;
+    margin-left: 4.5rem;
+    display: inline-block;
+
+}
+.next-song{
+    margin-top: 2rem;
+    margin-left:4rem;
+    display: inline-block;
+}
+#add-playlist-btn,#prev-song-btn,#next-song-btn {
+background-color: gray;
+border: none;
+border-radius: 2px;
+color: white;
+width: 100px;
+}
+#playlist-name-input{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+#create-playlist-button{
+    background-color:lightseagreen;
+}
+
+#playlist-songs button{
+background-color: #2196F3;
+display: block;
+border: none;
+border-radius: 8px;
+min-width: 200px;
+margin-top: 1rem;
+margin-left: 5rem;
+}
+
+
+
+#all-playlist button{
+    background-color: #8b2285;
+    display: block;
+    border: none;
+    border-radius: 8px;
+    min-width: 200px;
+    margin-top: 1rem;
+    margin-left: 5rem; 
+}
+
+
+
+
+
+
+#search-input,#search-playlist-input{
+    margin-top: 20px;
+    background-color:gainsboro
+}
+
+
+#search-songs button{
+    display: block;
+    margin-top: 20px;
+    background-color: lightcyan;
+    border: none;
+    margin-left: 50px;
+}
+#search-playlist button{
+    display: block;
+    margin-top: 20px;
+    background-color: lightcyan;
+    border: none;
+    margin-left: 50px; 
+}
+
+
+#remove button{
+
+    background-color: #425563;
+    color: aliceblue;
+
+    position: fixed; /* Fix the position on the screen */
+    top: 45rem; /* Adjust the vertical position from the top */
+    right: 4rem; /* Adjust the horizontal position from the right */
+    
+    border: none;
+  
+  }
+
+
